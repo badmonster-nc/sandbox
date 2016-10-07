@@ -2,6 +2,6 @@
 
 c
 b
-bb
+bcb
 cc
 
