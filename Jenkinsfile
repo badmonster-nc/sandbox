@@ -1,6 +1,5 @@
-def gradle(command) {
-  sh "./gradlew ${command}"
-}
+
 node {
-    gradle 'tasks'
+    def GRADLE_HOME = tool name: 'gradle', type: 'hudson.plugins.gradle.GradleInstallation'
+    sh "${GRADLE_HOME}/bin/gradle tasks"
 }
